@@ -24,7 +24,7 @@ import peote.svgPath.Main;
 
 		#if !munit
 		var app = new peote.svgPath.Main();
-		app.meta.set("build", "8");
+		app.meta.set("build", "9");
 		app.meta.set("company", "Sylvio Sell - maitag");
 		app.meta.set("file", "Main");
 		app.meta.set("name", "Peote-svgPath");

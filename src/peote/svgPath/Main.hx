@@ -34,11 +34,20 @@ class Main extends Application
 		var display = new Display(0, 0, window.width, window.height);
 		peoteView.addDisplay(display);
 		Tri.init(display);
-		var pathData =  'M200,300 Q400,50 600,300 T1000,300,L50,50 L20,20 L100,200 C100,100 250,100 250,200S400,300 400,200';
 		var lineThick = 4;
 		var drawing = new SVGpath( Color.RED, lineThick );
-		drawing.drawPath( pathData );
-		// basicTriangle();
+		//drawing.fillTriangle( 100,100,200,150,130,220, Color.RED );
+		//drawing.fillLine( 100, 100, 500, 500, Color.RED, 20 );
+		//drawing.fillQuadrilateral(100,300,300,120,130,220,500,500, Color.RED );
+		drawing.fillQuadrilateral( 20, 20, 200, 20, 200+50, 200, 20+50, 200, Color.RED );
+		//drawing.fillQuadrilateral(20, 20,200, 20,200,200,20,200, Color.RED );
+		
+		//var pathData =  'M200,300 Q400,50 600,300 T1000,300,L50,50 L20,20 L100,200 C100,100 250,100 250,200S400,300 400,200';
+
+		//drawing.drawPath( pathData );
+		
+		//basicTriangle();
+		//basicTriangle2();
 
 	}
 	public function basicTriangle()
@@ -49,6 +58,20 @@ class Main extends Application
 		var bY=150; 
         var cX=130; 
 		var cY=220; 
+		var tri = new Tri(			
+			aX, aY, Color.RED,
+			bX, bY, Color.RED,
+			cX, cY, Color.RED
+		);
+	}
+	public function basicTriangle2()
+	{
+		var aX=50; 
+		var aY=10; 
+		var bX=100;
+		var bY=10; 
+		var cX=130; 
+		var cY=120; 
 		var tri = new Tri(			
 			aX, aY, Color.RED,
 			bX, bY, Color.RED,

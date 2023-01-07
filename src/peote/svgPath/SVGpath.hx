@@ -118,9 +118,10 @@ class SVGpath implements ILinePathContext {
         // tri e - a b d
         // tri f - b c d
         fillTriangle( ax, ay, bx, by, dx, dy, color );
-        fillTriangle( ax, ay, cx, cy, dx, dy, color );
+        fillTriangle( cx, cy, dx, dy, bx, by, color );
         return { ax: ax, ay: ay, bx: bx, by: by, cx: cx, cy: cy, dx: dx, dy: dy };
     }
+    public
     function fillTriangle( ax: Float, ay: Float
                          , bx: Float, by: Float
                          , cx: Float, cy: Float
