@@ -65,8 +65,6 @@ class Tri implements Element
 		display.addProgram(program);
 	}
 	
-	
-	
 	public function new(
 		x0:Float, y0:Float, c0:Color,
 		x1:Float, y1:Float, c1:Color,

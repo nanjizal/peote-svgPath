@@ -16,6 +16,7 @@
 	<source path="src" />
 	
 	<haxelib name="lime" />	
+	<haxelib name="justPath" />
 	<haxelib name="peote-view" />
 	
 	<!-- force compiling for a special opengl-es version (only set one of them) -->
